@@ -14,7 +14,7 @@ class PocketMoney implements Plugin
 {
 	private $api, $config, $path;
 
-	const DEFAULT_MONEY = 500;
+	const DEFAULT_MONEY = 50;
 
 	public function __construct(ServerAPI $api, $server = false)
 	{
@@ -249,7 +249,7 @@ class PocketMoney implements Plugin
 						}
 						arsort($temp);
 						$i = 1;
-						$output .= "[PocketMoney] Millionaires\n";
+						$output .= "[PocketMoney] Richest\n";
 						$output .= "===========================\n";
 						foreach ($temp as $name => $money) {
 							if ($i > $amount) {
